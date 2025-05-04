@@ -1,5 +1,5 @@
 
-// Inizializzazione di AOS.js con configurazione professionale
+// Inizializzazione di AOS.js con configurazione avanzata
 
 if (typeof AOS !== 'undefined') {
     AOS.init({
@@ -14,9 +14,11 @@ if (typeof AOS !== 'undefined') {
         }
     });
 
-    // Assegna automaticamente l'animazione "fade-up" a tutti gli elementi principali
-    document.querySelectorAll('section, h1, h2, p').forEach(function(element) {
-        element.setAttribute('data-aos', 'fade-up');
+    // Assegna automaticamente l'animazione "fade-up" a TUTTI i contenitori principali
+    document.querySelectorAll('section, h1, h2, p, div, article, header, main, aside, footer, li').forEach(function(element) {
+        if (!element.hasAttribute('data-aos')) {
+            element.setAttribute('data-aos', 'fade-up');
+        }
     });
 
 } else {
