@@ -1,7 +1,6 @@
 
 /* style.css - Design professionale base per Massimiliano Moreni */
 
-/* Reset base */
 * {
     margin: 0;
     padding: 0;
@@ -80,16 +79,4 @@ footer {
     font-size: 0.9em;
     color: #555;
     margin-top: 20px;
-}
-
-/* Esempio base di animazione CSS (per fallback o elementi extra) */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
 }
